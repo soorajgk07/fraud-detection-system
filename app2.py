@@ -46,7 +46,6 @@ if st.button("Check For Fraud"):
         label = "🚨 Fraudulent Transaction" if prediction == 1 else "✅ Legitimate Transaction"
 
         st.subheader(f"Prediction: {label}")
-        st.write(f"**Fraud Probability:** {prob:.4f} (Threshold = 0.97)")
     else:
         st.error("⚠️ Please fill all required fields.")
 
